@@ -1,0 +1,914 @@
+/*------------------------------------------------------
+ page-about
+------------------------------------------------------*/
+
+.page-about {
+  background: linear-gradient(90deg, #0d76a3, #171f63);
+}
+
+.page-aboutTop {
+  padding-top: 4rem;
+}
+
+.page-aboutTop .titleWhite {
+  width: max-content;
+  font-size: 0.875rem;
+  z-index: 1;
+  position: absolute;
+  top: 12%;
+  left: 30%;
+}
+
+.page-aboutTopImg {
+  width: 84%;
+  position: relative;
+  padding-top: 6rem;
+}
+
+.page-aboutTopImg img {
+  z-index: 1;
+  position: relative;
+}
+
+.page-aboutTopImg::before {
+  position: absolute;
+  top: 120px;
+  left: 10px;
+  content: url(../img/about_top_after.svg);
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.memberList {
+  position: relative;
+}
+
+.memberText.role {
+  top: 2%;
+  left: 6%;
+}
+
+.memberText.memberTextName {
+  bottom: 2%;
+  right: 6%;
+  left: auto;
+}
+
+.memberText.memberTextName p {
+  font-size: 1.4rem;
+}
+
+.memberImgContainer {
+  position: relative;
+}
+
+.greeting {
+  color: white;
+}
+
+.question .din {
+  font-size: 1.4rem;
+}
+
+.answer {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.greeting h2 {
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: white 2px solid;
+  max-width: 92%;
+  margin: auto;
+}
+
+.bgWhite {
+  background: white;
+}
+
+.bgWhite .SubTitle {
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 92%;
+  width: 100%;
+  text-align: left;
+}
+
+.bgWhite .SubTitle:after {
+  content: none;
+}
+
+.valueContainer.wrap {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem 1rem;
+}
+
+.valueContainer table tr {
+  display: flex;
+  text-align: left;
+  font-size: 0.9rem;
+  padding: 0.5rem 0;
+  border-top: #171f63 1px solid;
+}
+
+.valueContainer table tr:last-of-type {
+  border-bottom: #171f63 1px solid;
+}
+
+.valueContainer table th {
+  width: 30%;
+}
+
+.valueContainer table td {
+  width: 70%;
+}
+
+.archive {
+  background: linear-gradient(90deg, #0d76a3, #171f63);
+  padding-top: 6rem;
+  color: white;
+}
+
+.archive h1 {
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: white 3px solid;
+  max-width: 92%;
+  margin: auto;
+  font-size: 1.6rem;
+}
+
+.archive-voice {
+  background: linear-gradient(90deg, #0d76a3, #171f63);
+  padding-top: 6rem;
+  color: white;
+}
+
+.voiceName.skew.memberText {
+  padding: 0.7rem 3.3rem;
+  font-size: 1.2rem;
+  transform: skewX(-10deg) translateY(-50%) translateX(-3%);
+}
+
+.voiceList.fbf {
+  flex-direction: column;
+}
+
+.voiceList {
+  margin-top: 2rem;
+}
+
+.voiceQ {
+  border-top: white 2px solid;
+  padding: 0.5rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.voiceContents {
+  border-bottom: white 2px solid;
+}
+
+.icon_plus {
+  width: 17px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-aboutTop .titleWhite {
+    transform: skewX(-10deg) translateY(50%) translateX(30%);
+  }
+
+  .memberImgContainer {
+    width: 35%;
+  }
+
+  .greeting h2:not(.sp) {
+    margin-top: 0;
+    display: block;
+    max-width: 100%;
+  }
+
+  .greetingContent {
+    width: 65%;
+  }
+
+  .greeting .pcFbf {
+    gap: 5rem;
+  }
+
+  .memberText.memberTextName {
+    bottom: 15%;
+    right: -75%;
+    left: auto;
+    min-width: auto;
+  }
+
+  .memberText.memberTextName {
+    font-size: 1.6em;
+  }
+
+  .memberText.role {
+    left: -4%;
+    top: -85%;
+    min-width: auto;
+    font-size: 1.6rem;
+  }
+
+  .memberText.role p {
+    font-size: 1.6rem;
+  }
+
+  .greetingQa,
+  .question,
+  .answer {
+    font-size: 22px;
+    line-height: 2.2;
+  }
+
+  .question .din {
+    font-size: 1.2em;
+  }
+
+  .memberText.memberTextName p {
+    font-size: 1.6rem;
+  }
+
+  .memberText.skew {
+    padding: 0.5rem 0.9rem;
+  }
+
+  .takeuchi .memberText.role {
+    top: -75%;
+  }
+
+  .greetingQa {
+    margin-top: 4rem;
+  }
+
+  .greetingQa .answer {
+    margin-top: 2rem;
+  }
+
+  .greeting {
+    padding-bottom: 6rem;
+  }
+
+  .valueContainer.wrap {
+    max-width: 800px;
+    padding: 3rem 3rem;
+  }
+
+  .valueContainer table {
+    width: 100%;
+  }
+
+  .valueContainer table th {
+    padding-left: 2rem;
+  }
+
+  .visionMap.wrap {
+    max-width: 75%;
+  }
+}
+
+.swiper-fade .swiper-slide {
+  transition-property: opacity !important;
+}
+
+.entryListContainer.fbf {
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+}
+
+.entryListContainer.fbf.wrap {
+  max-width: 92%;
+  flex-direction: column;
+}
+
+.entryListContainer .entryList.skew {
+  background: white;
+  width: 100%;
+  min-width: auto;
+  padding: 0.4rem 1rem;
+  border: white 2px solid;
+}
+
+.entryListContainer .entryList.skew p {
+  color: #171f63;
+  font-size: 1rem;
+}
+
+.entryList {
+  cursor: pointer;
+}
+
+.entryList p {
+  width: max-content;
+}
+
+.entryList p .din {
+  font-size: 1.4em;
+}
+
+/* 以下 */
+/* キャリアアドバイザー */
+.EcareerContainer {
+  padding: 100px 0 210px;
+  /* background: linear-gradient(90deg, #0d76a3, #171f63); */
+  font-family: dnp-shuei-gothic-gin-std, sans-serif;
+}
+
+.careerContent {
+  max-width: 90%;
+  margin: 0 auto;
+  padding-top: 4rem;
+}
+
+.careerMain {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #fff;
+}
+
+.careerImage {
+  position: relative;
+  /* margin: 0 70px; */
+}
+
+.careerImage img {
+  width: 100%;
+}
+
+.careerName {
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  line-height: 20px;
+  text-align: center;
+  color: #171f63;
+  background: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 15px;
+}
+
+.careerName::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -10px;
+  width: 0;
+  height: 0;
+  border: none;
+  border-left: solid 10px transparent;
+  border-bottom: solid 30px #fff;
+}
+
+.careerName::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -10px;
+  width: 0;
+  height: 0;
+  border: none;
+  border-left: solid 10px #fff;
+  border-bottom: solid 30px transparent;
+}
+
+.careerCareer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.careerCatchCopy {
+  display: inline-block;
+  color: #171f63;
+  font-size: 18px;
+  background: #fff;
+  padding: 3px 5px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.careerCareerDetail {
+  color: #fff;
+  font-weight: bold;
+}
+
+.careerIntroduction {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 2;
+  margin-bottom: 40px;
+}
+
+/* フォーム */
+.formContainer {
+  background: #fff;
+  padding: 100px 0;
+}
+
+.formContainer form {
+  margin: 0 30px;
+}
+
+.formContent {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.formRow {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.formLabel {
+  width: 200px;
+  margin-bottom: 8px;
+}
+
+.formLabel span {
+  display: block;
+  width: 100%;
+  height: 35px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(90deg, #0d76a3, #171f63);
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 1px;
+}
+
+.formItem {
+  display: flex;
+  width: 100%;
+}
+
+.formItem input[type="text"],
+.formItem input[type="tel"],
+.formItem input[type="email"] {
+  width: 100%;
+  height: 35px;
+  font-size: 18px;
+  padding: 0 3px;
+  border: 1px solid #171f63;
+}
+
+.formItem input[type="text"].oneThird {
+  width: 32%;
+  margin-right: 2%;
+}
+
+.formItem input[type="text"].oneThird:last-child {
+  margin-right: 0;
+}
+
+.formItem.company {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.formItem.company span {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  font-size: 13px;
+  color: #171f63;
+}
+
+.formSelect {
+  position: relative;
+  width: 100%;
+  height: 35px;
+  border: 1px solid #171f63;
+}
+
+.formSelect.oneThird {
+  width: 32%;
+  margin-right: 2%;
+}
+
+.formSelect.oneThird:last-child {
+  margin-right: 0;
+}
+
+.formSelect select {
+  width: 100%;
+  height: 100%;
+  padding: 0 3px;
+  cursor: pointer;
+  border: none;
+}
+
+.firstName {
+  display: block;
+  margin-left: 15px;
+}
+
+.formItem textarea {
+  width: 100%;
+  font-size: 20px;
+  border: 1px solid #171f63;
+}
+
+.formFileBtn {
+  color: #fff;
+  background: #333;
+  font-weight: bold;
+  border-radius: 1px;
+  padding: 10px;
+  margin-bottom: 0;
+  line-height: 2;
+  width: 270px;
+}
+
+.formItem input[type="file"] {
+  display: none;
+}
+
+.formItem p {
+  display: flex;
+  gap: 1rem;
+  height: 100%;
+}
+
+.formItem.file p {
+  display: flex;
+}
+
+.formRow:last-of-type .formItem p {
+  display: block;
+}
+
+.formFooter {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.formSubmitBtn {
+  position: relative;
+  width: 180px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.formSubmitBtn::before,
+.formSubmitBtn::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border: none;
+}
+
+select {
+  border-radius: 0px !important;
+  background: #fff !important;
+}
+
+.formSubmitBtn::before {
+  top: 0;
+  left: 0;
+  border: none;
+  border-left: solid 10px #fff;
+  border-bottom: solid 40px transparent;
+}
+
+.formSubmitBtn::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border: none;
+  border-left: solid 10px transparent;
+  border-bottom: solid 40px #fff;
+}
+
+.formSubmitBtn input {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(90deg, #0d76a3, #171f63);
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.formTel,
+.formSupplement {
+  color: #171f63;
+}
+
+.formTel {
+  font-size: 18px;
+  margin: 15px 0 5px;
+}
+
+.formSupplement {
+  font-size: 15px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  display: none;
+}
+
+.voiceA {
+  padding: 1rem;
+}
+
+@media screen and (min-width: 900px) {
+  .careerContent {
+    max-width: 80%;
+  }
+
+  .careerImage {
+    margin: 0 70px;
+  }
+
+  .careerName {
+    bottom: 50px;
+    left: -30px;
+    width: 160px;
+    height: 40px;
+    line-height: 30px;
+    text-align: center;
+    color: #171f63;
+    background: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px 15px;
+  }
+
+  .careerName::before {
+    border-bottom: solid 40px #fff;
+  }
+
+  .careerName::after {
+    border-bottom: solid 40px transparent;
+  }
+
+  .careerCareer {
+    flex-wrap: nowrap;
+  }
+
+  .careerSub {
+    margin: 0 30px;
+  }
+
+  .careerCatchCopy {
+    font-size: 22px;
+    margin-bottom: 0;
+    width: inherit;
+  }
+
+  .careerCareerDetail {
+    margin-left: 20px;
+  }
+
+  .careerIntroduction {
+    font-size: 16px;
+  }
+
+  .formRow {
+    flex-wrap: nowrap;
+  }
+
+  .formLabel {
+    margin-bottom: 0;
+  }
+
+  .formItem {
+    width: calc(100% - 247px);
+    margin-left: 20px;
+  }
+
+  .formItem.company {
+    padding-bottom: 0;
+  }
+
+  .formItem.company span:not(.wpcf7-form-control-wrap) {
+    top: 50%;
+    right: -115px;
+    bottom: inherit;
+    left: inherit;
+    transform: translateY(-50%);
+  }
+
+  .entryListContainer.fbf.wrap {
+    max-width: 800px;
+    flex-direction: row;
+  }
+  .entryListContainer .entryList.skew {
+    width: calc(100% / 3 - 1%);
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    width: max-content;
+    bottom: auto;
+    top: 66.5%;
+    left: 8%;
+    display: block;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: white !important;
+    opacity: 1 !important;
+    width: 13px;
+    height: 13px;
+    margin: 7px !important;
+  }
+
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    transform: scale(2);
+  }
+
+  .entryContent {
+    width: 100%;
+  }
+
+  .voiceList.fbf {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+
+  .voiceContents {
+    margin-top: 0;
+    width: calc(100% - 35%);
+  }
+
+  .voiceList .voiceImg {
+    width: 35%;
+  }
+
+  .voiceRole {
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+
+  .voiceComment {
+    margin: 1rem 0;
+  }
+
+  .voiceQ {
+    padding: 0.8rem;
+    font-weight: bold;
+  }
+}
+
+.progressbar {
+  position: relative;
+  width: 100%;
+  height: 7px;
+  margin-top: 10px;
+  background: #ccc;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.progressbar span {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fbca5a;
+  border-radius: 7px;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition-timing-function: linear;
+}
+
+.entryListContainer .entryList.skew.entryList-active {
+  background: linear-gradient(90deg, #0d76a3, #171f63);
+  border-color: white;
+}
+
+.entryListContainer .entryList.skew.entryList-active p {
+  color: white;
+}
+
+.voiceComment {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.voiceA {
+  padding: 0.5rem;
+  line-height: 1.6rem;
+}
+
+@media screen and (max-width: 899px) {
+  .formItem.company {
+    position: relative;
+    padding-bottom: 0px;
+    flex-direction: column;
+  }
+  .formItem.company span {
+    position: relative;
+  }
+  .careerContainer.fbf {
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .careerBottomContainer p {
+    line-height: 2;
+  }
+
+  .quitContainer p {
+    line-height: 2;
+    font-size: 17px;
+  }
+
+  .careerup .pcFbf {
+    transform: none;
+  }
+
+  .quitExp {
+    padding: 2.4rem 0;
+  }
+
+  .quitContainer.wrap {
+    max-width: 92%;
+  }
+
+  .aboutTextContainer p {
+    line-height: 2.3;
+  }
+  .aboutText {
+    max-width: 100%;
+  }
+}
+
+.wpcf7-not-valid-tip {
+  position: absolute;
+  top: -70%;
+  left: 0;
+  font-size: 9px !important;
+  color: white !important;
+  background-color: rgba(230, 0, 0, 0.8);
+  padding: 3px 6px;
+  border-radius: 5px;
+}
+
+.wpcf7-form-control-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: none;
+}
+
+.formItem {
+  gap: 1rem;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.formItem span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="date"] {
+  border: none;
+}
+
+.aboutmore {
+  font-size: 0.8em;
+  cursor: pointer;
+}

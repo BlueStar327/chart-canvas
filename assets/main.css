@@ -1,0 +1,569 @@
+.pc {
+  display: none;
+}
+
+/* loading animation
+================================================ */
+
+/* header
+================================================ */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: white;
+}
+.headerInner {
+  height: 65px;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerLogo {
+  width: 75px;
+}
+
+/* humb
+================================================ */
+.humb {
+  position: relative;
+  cursor: pointer;
+}
+
+.humbInner {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.humbInner span {
+  background: linear-gradient(90deg, #0d76a3, #171c61);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+}
+
+.humbInner span:first-of-type,
+.humbInner span:last-of-type {
+  width: 30px;
+  height: 2.5px;
+}
+
+.humbInner span:nth-of-type(2),
+.humbInner span:nth-of-type(3) {
+  width: 15px;
+  height: 2.5px;
+}
+
+.humbInner span:nth-of-type(1) {
+  top: 0;
+}
+
+.humbInner span:nth-of-type(2) {
+  top: 30%;
+}
+
+.humbInner span:nth-of-type(3) {
+  bottom: 30%;
+}
+
+.humbInner span:nth-of-type(4) {
+  bottom: 0;
+}
+
+.spNav {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(90deg, #0d76a3, #171f63);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spNav ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.spNav li a {
+  display: block;
+}
+
+.spNavSpan {
+  display: block;
+  font-size: 0.7em;
+  line-height: 1;
+}
+
+.spNavService {
+  position: relative;
+}
+
+.spNavService::after {
+  content: url(../img/icon_plus.svg);
+  position: absolute;
+  top: 50%;
+  right: -10%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  line-height: 1;
+  transition: all 0.3s ease;
+}
+.spNavService.active::after {
+  content: url(../img/icon_minus.svg);
+  top: 30%;
+  right: 15%;
+}
+
+.spNavService .servicePlus {
+  width: 15px;
+}
+
+.spNavLogo {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+}
+
+.humbClose {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 20px;
+  height: 20px;
+}
+
+.humbClose span {
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.humbClose span:first-of-type {
+  transform: rotate(45deg);
+}
+
+.humbClose span:last-of-type {
+  transform: rotate(-45deg);
+}
+
+.spNav {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.spNav.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* main - fv
+================================================ */
+.fv {
+  padding-top: 65px;
+  position: relative;
+  background-color: #f2f2f2;
+}
+
+.fvTop {
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+.slideText {
+  position: absolute;
+  top: 45%;
+  left: 0;
+}
+
+.slideText span {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.slideTextBg:nth-of-type(1) {
+  width: max-content;
+}
+.slideTextBg:nth-of-type(2) {
+  width: max-content;
+}
+
+.slideText span {
+  font-weight: bold;
+  padding-left: 6vw;
+}
+
+.slideText p {
+  background: linear-gradient(65deg, #0d76a3, #171f63);
+  padding: 0.6rem 1rem;
+  padding-left: 6vw;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.slideInnerBtn {
+  text-align: center;
+}
+
+.slideInnerBtn span {
+  font-size: 13px;
+}
+
+.slideInnerBtn .btn {
+  margin-top: 0.5rem;
+}
+
+.swiper-slide img {
+  pointer-events: none;
+}
+
+.fvSlideBtn.fbf {
+  background-color: white;
+  position: relative;
+  display: none;
+}
+
+.fvSlideBtnList .cls-1 {
+  fill: black;
+  transition: all 0.6s ease;
+}
+.fvSlideBtnList.slideActive .cls-1 {
+  fill: white;
+}
+
+.fvSlideBtn .whiteArrow {
+  width: 40px;
+}
+
+.fvSlideBtnList {
+  width: calc(100% / 4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem 2rem;
+  transition: all 0.6s ease;
+  background-color: white;
+}
+
+.fvSlideBtnList.slideActive {
+  background: linear-gradient(65deg, #0d76a3, #171f63);
+  color: white;
+}
+
+.fvSlideBtnList p {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.fvBottom {
+  background-color: #f2f2f2;
+}
+
+.logoSwiper {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoSwiperSlide {
+  width: auto;
+  height: auto;
+}
+
+.logoSwiperSlide img {
+  height: 30px;
+  object-fit: contain;
+}
+
+.CompanyLogo {
+  background-color: #f2f2f2;
+}
+
+.swiper-wrapper.logoSwiper {
+    -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
+
+.fvBottom {
+  padding: 1.4rem 0;
+}
+
+/*------------------------------------------------------
+PC
+------------------------------------------------------*/
+@media screen and (min-width: 960px) {
+  .pc {
+    display: block;
+  }
+
+  .sp {
+    display: none;
+  }
+
+  /* fv
+================================================ */
+  .wrap {
+    max-width: 910px !important;
+    margin: auto;
+  }
+
+  body:has(.front-page) {
+    background-color: #f2f2f2;
+    max-height: 100vh;
+    overflow-y: scroll;
+  }
+  .fv {
+    padding-top: 35px;
+    padding-bottom: 0;
+  }
+
+  .fvSlideBtn.fbf {
+    margin-top: 1rem;
+  }
+  .slideText {
+    top: 5%;
+    left: 4%;
+  }
+
+  .fvSlideBtnList {
+    flex-direction: row;
+  }
+
+  .slideText p {
+    padding: 0;
+    padding: 0.8rem 1rem;
+    font-size: 2rem;
+  }
+
+  .slideText span {
+    padding-left: 0;
+  }
+
+  .slideInnerBtn {
+    position: absolute;
+    bottom: 15%;
+    left: 4%;
+  }
+
+  .egIntro.egIntroPc tbody {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .egIntro.egIntroPc table {
+    max-width: 65%;
+    margin: auto;
+  }
+
+  .egIntro p {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    padding-bottom: 3rem;
+  }
+
+  .egIntro th {
+    width: 15%;
+  }
+
+  .fvSlideBtn.fbf {
+    display: flex;
+  }
+
+  .freelance .jittai table {
+    width: 45%;
+  }
+
+  .workExm img {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .workVal .wrap.mt-2 {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+
+  .logoSwiperSlide {
+    width: 100px;
+  }
+
+  .logoSwiperSlide img {
+    height: 30px;
+    object-fit: contain;
+  }
+}
+
+.voiceQ img {
+  transition: all 0.3s ease;
+}
+
+.voiceQ.active img {
+  transform: rotate(45deg);
+}
+
+.spNav2List a {
+  background: white;
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px;
+  color: #171c61;
+}
+
+.spNavService.active .spNav {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.spNav2 {
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.spNav2List {
+  display: block;
+}
+
+.spNav2.active {
+  display: flex !important;
+  animation: appear 0.5s ease;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.spNav1 {
+  transition: all 0.3s ease;
+}
+
+.spNav1.none {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.relative {
+  position: relative;
+}
+
+.gNav2 {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -250px;
+  left: 57%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  gap: 0 !important;
+  visibility: hidden;
+}
+
+.gNav2.contactGNav2 {
+  bottom: -140px;
+  left: 57%;
+}
+
+.gNavRecruit {
+  cursor: pointer;
+}
+
+.gNavRecruit:hover .gNav2 {
+  opacity: 1;
+  visibility: visible;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+.gNav ul.gNav2 {
+  width: max-content;
+}
+
+.gNav2List {
+  display: block;
+  transition: all 0.2 ease;
+  border-radius: 5px;
+}
+
+.gNav2List a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.gNav2List:hover {
+  background-color: #eee;
+}
+
+.bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  width: 100vw;
+  height: 4px;
+  background-color: #fdfe00;
+  transition: transform 3s linear;
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.swiper-slide-active .slide-img,
+.swiper-slide-duplicate-active .slide-img,
+.swiper-slide-prev .slide-img {
+  animation: zoomOut 10s linear 0s;
+  animation-fill-mode: both;
+}
+
+.subp .slideText {
+  opacity: 1;
+  transform: none;
+}
+.points {
+    text-align: left;
+}
